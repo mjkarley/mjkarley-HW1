@@ -27,11 +27,13 @@ or Octave).
 
 ### Solution
 
-Write your solution here.  Note, in the past, we've used a full, graphical
+Something I have used in the past is Gimp. It's a free, open source alternative to photoshop, aka, a photo editor. I downloaded it a couple years ago to photoshop a few pictures, and it did the job. I wasn't very familiar with the software at the time, but apparently it's the most popular photo editor on Linux. I also just learned that GIMP stands for GNU Image Manipulation Program, which is crazy to me because I had no idea when i downloaded it with windows a couple years ago, before I knew anything about Linux.
+
+[Write your solution here.  Note, in the past, we've used a full, graphical
 version of Linux.  With WSL, you probably don't have as direct a path for
 exploring software in the Software Manager.  However, use the power of
 Google (or AskJeeves) to explore what sorts of open-source software is out
-there for technical or other applications.
+there for technical or other applications.]
 
 
 ## Problem 3 -- Your CPU
@@ -47,11 +49,22 @@ using `ls > directory_contents.txt` to dump the contents of a directory to a fil
 ### Solution
 
 To display CPU information, I used the following command:
+'''bash
+lscpu
+'''
+but that only told me that I have 8 cores. so instead I used this to find the speed for each core:
 
+'''bash
+cat /proc/cpuinffo
+'''
+which told me the speed for each of my 8 cores, and told me that I do, indeed, have 8 of them. My speed for each was about ~2994 MHz.
+
+[
 ```bash
 ls -al # <--- that's not right, but it shows you how to include
        #      code in Markdown!
 ```
+]
 
 ## Problem 4 -- Resource Hogs
 
