@@ -76,6 +76,7 @@ in your writeup.
 
 ### Solution
 
+thinking htop or top or ps aux but I know they're not showing every process.
 
 
 ## Problem 5 -- `bash`
@@ -87,3 +88,8 @@ Where is `bash` located on your Linux system?  And what version of
 determine this information.
 
 ### Solution
+Using the command 
+
+echo "${BASH_VERSION}"
+
+I saw that my bash version is 5.1.16(1)-release.
